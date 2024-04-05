@@ -78,7 +78,7 @@ if st.button('Predict heart'):
         thal = 1
     elif thal=="Fixed defect":
         thal = 2
-    elif thal=="Reversable defect":
+    elif thal=="Reversible defect":
         thal=3
 
     query = np.array([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal],dtype=object).reshape(1,13)
